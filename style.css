@@ -1,0 +1,371 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.logo{
+    color:#00d4ff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00d4ff;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+    animation:slideDown 1s ease;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00d4ff;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    background:#0099cc;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    padding:100px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#00d4ff;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* Alternate section colors */
+
+#about,
+#plans,
+#trainers,
+#testimonials,
+#contact{
+    background:#111;
+}
+
+#services,
+#stats,
+#gallery,
+#bmi{
+    background:#1a1a1a;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#00d4ff;
+    color:#000;
+}
+/* ==========================
+   TRAINERS
+========================== */
+
+#trainers img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.5s;
+}
+
+#trainers .card:hover img{
+    transform:scale(1.08);
+}
+
+#trainers h3{
+    margin-top:15px;
+    color:#00d4ff;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.5s;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+    box-shadow:0 15px 30px rgba(0,212,255,.4);
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonial{
+    max-width:700px;
+    margin:auto;
+    background:#222;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.testimonial p{
+    font-size:22px;
+    font-style:italic;
+}
+
+.testimonial h3{
+    margin-top:20px;
+    color:#00d4ff;
+}
+
+/* ==========================
+   BMI
+========================== */
+
+.bmi-box{
+    max-width:500px;
+    margin:auto;
+    background:#222;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.bmi-box input{
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.bmi-box button{
+    padding:15px 35px;
+    background:#00d4ff;
+    color:white;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.bmi-box button:hover{
+    background:#0099cc;
+}
+
+#result{
+    margin-top:20px;
+    color:#00d4ff;
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact{
+    text-align:center;
+}
+
+.social-icons{
+    margin-top:25px;
+}
+
+.social-icons a{
+    color:#00d4ff;
+    font-size:30px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   COUNTERS
+========================== */
+
+#stats h1{
+    font-size:55px;
+    color:#00d4ff;
+}
+
+#stats p{
+    font-size:20px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes slideDown{
+
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:10px;
+}
+
+nav ul li{
+margin:10px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section h2{
+font-size:32px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+}

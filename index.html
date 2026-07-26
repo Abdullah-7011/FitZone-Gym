@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FitZone Gym</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2 class="logo">FitZone</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#plans">Plans</a></li>
+<li><a href="#stats">Stats</a></li>
+<li><a href="#trainers">Trainers</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#testimonials">Reviews</a></li>
+<li><a href="#bmi">BMI</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<header class="hero" id="home">
+
+<h1>Transform Your Body</h1>
+
+<p>Train Hard. Stay Strong. Live Healthy.</p>
+
+<a href="#plans" class="btn">Join Now</a>
+
+</header>
+
+<section id="about">
+
+<h2>About Our Gym</h2>
+
+<p>
+
+FitZone Gym provides modern equipment,
+professional trainers,
+and personalized fitness plans to help
+you achieve your fitness goals.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🏋 Personal Training</h3>
+
+<p>Professional one-on-one coaching.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💪 Strength Training</h3>
+
+<p>Modern equipment for muscle building.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧘 Yoga Classes</h3>
+
+<p>Improve flexibility and reduce stress.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="plans">
+
+<h2>Membership Plans</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Basic</h3>
+
+<p>$20 / Month</p>
+
+</div>
+
+<div class="card">
+
+<h3>Premium</h3>
+
+<p>$40 / Month</p>
+
+</div>
+
+<div class="card">
+
+<h3>Pro</h3>
+
+<p>$60 / Month</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2>Our Achievements</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h1 class="counter" data-target="500">0</h1>
+
+<p>Happy Members</p>
+
+</div>
+
+<div class="card">
+
+<h1 class="counter" data-target="25">0</h1>
+
+<p>Professional Trainers</p>
+
+</div>
+
+<div class="card">
+
+<h1 class="counter" data-target="100">0</h1>
+
+<p>Fitness Machines</p>
+
+</div>
+
+<div class="card">
+
+<h1 class="counter" data-target="10">0</h1>
+
+<p>Years Experience</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="trainers">
+
+<h2>Meet Our Trainers</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/trainer1.jpg" alt="Trainer 1">
+<h3>John Carter</h3>
+
+<p>Strength Coach</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/trainer2.jpg" alt="Trainer 2">
+<h3>Sarah Wilson</h3>
+
+<p>Yoga Trainer</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/trainer3.jpg" alt="Trainer 3">
+
+<h3>David Smith</h3>
+
+<p>Personal Trainer</p>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gym Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/gallery1.jpg" alt="Gallery 1">
+<img src="images/gallery2.jpg" alt="Gallery 2">
+<img src="images/gallery3.jpg" alt="Gallery 3">
+<img src="images/gallery4.jpg" alt="Gallery 4">
+<img src="images/gallery5.jpg" alt="Gallery 5">
+<img src="images/gallery6.jpg" alt="Gallery 6">
+</div>
+
+</section>
+
+<section id="testimonials">
+
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+
+<p id="quote">
+
+"FitZone Gym completely changed my lifestyle."
+
+</p>
+
+<h3 id="author">- Ali Khan</h3>
+
+</div>
+
+</section>
+
+<section id="bmi">
+
+<h2>BMI Calculator</h2>
+
+<div class="bmi-box">
+
+<input type="number" id="height" placeholder="Height (cm)">
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<button onclick="calculateBMI()">
+
+Calculate BMI
+
+</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p><i class="fas fa-envelope"></i> raoabdullah7011@gmail.com</p>
+
+<p><i class="fas fa-phone"></i> +92 311 8194145</p>
+
+<p><i class="fas fa-location-dot"></i> Multan, Pakistan</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
